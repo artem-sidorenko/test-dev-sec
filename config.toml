@@ -1,0 +1,42 @@
+languageCode = "en-us"
+title = "Hardening Framework"
+baseurl = "https://dev-sec.sidorenko.io/"
+theme = "hugo-future-imperfect"
+preserveTaxonomyNames = true
+paginate = 3
+
+[params]
+    # Sets the meta tag description, usually reserved for the main page
+    description          = "Hardning Framework"
+    # This will appear on the top left of the navigation bar
+    navbarTitle          = "Hardening Framework"
+    # Social media buttons that appear on the sidebar
+    socialAppearAtTop    = true
+    socialAppearAtBottom = true
+    # set this to the section name if section is not post
+    viewMorePostLink     = "/blog/"
+
+[params.intro]
+    header    = "Hardening Framework"
+    paragraph = "Hardening adds a layer into your automation framework, that configures your operating systems and services. It takes care of difficult settings, compliance guidelines, cryptography recommendations, and secure defaults."
+
+    about     = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus lacus, auctor vehicula molestie quis, tempor quis velit. Quisque in quam ac leo efficitur vulputate. Phasellus ullamcorper aliquam sodales. Maecenas sit amet condimentum ipsum. Proin sit amet ligula elit. Mauris."
+
+[params.postAmount]
+    sidebar = 2
+
+[[menu.main]]
+    name = "Blog"
+    url = "/blog"
+    identifier = "fa fa-newspaper-o"
+    weight = 1
+
+[[menu.main]]
+    name = "Categories"
+    url = "/categories"
+    weight = 2
+
+[[menu.main]]
+    name = "About"
+    url = "/about"
+    weight = 3
