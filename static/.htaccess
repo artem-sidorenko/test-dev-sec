@@ -2,3 +2,6 @@ RewriteEngine on
 # Redirect from http to https
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# Add HSTS headers to the https connections
+Header set Strict-Transport-Security "max-age=10886400; includeSubDomains" env=HTTPS
